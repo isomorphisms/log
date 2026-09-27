@@ -67,3 +67,5 @@ Almost none of the machinery here is mine. This repository rests on decades of w
 More personally, it also owes something to people I learned from who had strong ideas about how software and networks should work. I will try to name and link specific influences when I can rather than quietly absorbing their work into my own story.
 
 The point of keeping a log is partly to preserve those connections.
+
+I am keeping the longer thank-you note in [GRATITUDE.md](GRATITUDE.md).
