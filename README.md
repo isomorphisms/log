@@ -2,6 +2,12 @@
 
 *Captain's log, more or less.*
 
+The era of vibe coding is upon us, and that means good and bad. Among the beneficiaries is the concept of free software. I don't know how the culture of free software is going to change, but for the moment people have given of themselves for many, many years. They put their code out there, I think often sincerely hoping that somebody else will do something with it, and now I and other people are supercharging that.
+
+If you ever said software wants to be free, then you are being proven absolutely correct, because the cost of creating this stuff and forking is very low: several orders of magnitude lower than most of us are used to it being.
+
+After a couple months of vibe coding, I'm not sure that I could even type. I mean, I still remember the insert and escape commands in Vim, but the knowledge that seemed to exist more in my fingers than in my brain is quickly being converted into ideas for how I can keep my agents on track.
+
 The old word was **weblog**, then **blog**. This is not quite a weblog: the native object here is a Git repository. Entries are plain text, history is commits, and publishing is pushing. GitHub gives the repository a web face, but the log should remain useful when cloned, grepped, diffed, copied, or read somewhere else.
 
 GitHub accepts Git traffic over SSH, though it is not a general interactive shell account. That distinction fits the point of this project: the Web does not need to swallow every other protocol.
