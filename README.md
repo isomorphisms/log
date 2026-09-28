@@ -12,6 +12,32 @@ The old word was **weblog**, then **blog**. This is not quite a weblog: the nati
 
 GitHub accepts Git traffic over SSH, though it is not a general interactive shell account. That distinction fits the point of this project: the Web does not need to swallow every other protocol.
 
+## The long project
+
+The things I am trying to build now are not weekend projects. Just to put a number on it, without any precision, I expect the larger goals to take six months to a year at minimum. Some may take a couple of years.
+
+Software is not completely free yet. If it is not completely free in the next year, I expect it to get much closer over the next couple of years. Improvements in coding tools point toward a world in which anyone with an app idea can get it built by spending enough money on machine work.
+
+For someone in my position, that changes what is worth doing.
+
+The first goal is to rebuild software foundations the way I always wished they had been. Even with the new tools, that process may take years. But after only a couple of months I already have drafts, in some degree of working order, at the assembly level, sensor-hardware level, PIN level, operating-system level, and language level.
+
+My appetite may be growing as fast as the tools do. That might even be a good thing.
+
+The actual apps are not quite an afterthought. They are downstream of the foundational work, and they test whether the foundations are any good. Goal 10 is an **app factory**: a system for producing applications quickly, correctly, inspectably, and from reusable pieces. If ordinary application code becomes cheap, the valuable work shifts toward deciding what the layers mean, how they fit together, how they fail, and how much of the stack remains understandable and replaceable.
+
+Construction gives me the model. Putting up the wood for a house can be fascinating, watchable, tool-entrancing, and mathematically and engineering-wise enchanting. Starting with the wood still makes no sense before checking level and square and asking whether the gravel, bedrock, clay, or whatever sits underneath the slab will shift under tens or hundreds of tons over decades.
+
+I have never seen an actual house go up slowly, but I have often watched construction sites look almost unchanged month after month while some kind of digging or foundational work continued. Software foundations can look like that too.
+
+So I am patient in that sense. I did quickly make a few things with the new tool set. Those experiments showed me how good these systems already are at translating existing software. That ease of translation now shapes the process itself.
+
+If translation is cheap and bootstrapping works, use both deliberately. Find an existing implementation, paper, manual, architecture description, book, or body of documentation that contains ideas worth preserving. Download the important source material into or alongside the repository when licensing permits, record its provenance, and make the relevant knowledge locally available to guide the machine and remind me what the original goal was. Translate working systems into the vocabulary and architecture I actually want instead of repeatedly starting from memory.
+
+That changes the role of an issue too. Issues used to outpace pull requests. Now an issue often means something closer to: this thought was worth recording, but I did not yet want to spend the compute or my own thought on turning it into working code. A pull request can follow surprisingly soon once the question becomes concrete.
+
+The point is not to generate the maximum number of apps. The point is to use cheap translation, bootstrapping, testing, and machine labor to make another pass at the foundations, then let applications fall out of foundations good enough to deserve them.
+
 ## Motivation
 
 I want a durable record close to the work itself.
