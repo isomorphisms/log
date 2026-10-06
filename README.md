@@ -99,3 +99,24 @@ More personally, it also owes something to people I learned from who had strong 
 The point of keeping a log is partly to preserve those connections.
 
 I am keeping the longer thank-you note in [GRATITUDE.md](GRATITUDE.md).
+
+
+## Developer's log — October 6, 2026
+
+I now have four different systems just to keep the vibe coding in line, and I have to keep straight what each one is for.
+
+**AI-CI** tries to keep the model honest: tests, acceptance criteria, regressions, evidence, and rules learned from previous failures.
+
+**Kitchen** owns the scripts that are actually going to be handed to me to paste and run. It should turn an operation into one maintained, tested, usable piece of work instead of making me reconstruct it from a conversation.
+
+**Flexible Pipes** owns repeatable jobs. If something should be done again—not merely explained once—it belongs in a pipeline rather than in the model's memory of what it did last time.
+
+**Cat Food** knows the machines and deployment environments: how things actually build, install, run, and fail on the systems I use.
+
+I originally thought fairly aggressive continuous integration would be enough. It isn't. CI can tell you that a particular state passes its tests. It does not by itself keep an AI from changing the job, inventing a different script, forgetting which machine it is on, using the wrong compiler, or declaring something tested when it merely wrote the tests.
+
+So the tooling is multiplying around the model.
+
+I don't particularly mind learning the new tool set because the cycle is so fast. The historical comparisons make themselves: John Henry and the steam drill; CNC machining and wrought iron. A radically faster production method does not eliminate craft. It changes where the craft goes. More of the work moves into fixtures, tolerances, process control, tooling, inspection, and deciding exactly what machine you are asking to make.
+
+That seems to be what is happening with programming too. The code comes out almost absurdly fast. The new work is building enough machinery around that speed that the result remains mine.
