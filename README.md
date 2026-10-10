@@ -120,3 +120,32 @@ So the tooling is multiplying around the model.
 I don't particularly mind learning the new tool set because the cycle is so fast. The historical comparisons make themselves: John Henry and the steam drill; CNC machining and wrought iron. A radically faster production method does not eliminate craft. It changes where the craft goes. More of the work moves into fixtures, tolerances, process control, tooling, inspection, and deciding exactly what machine you are asking to make.
 
 That seems to be what is happening with programming too. The code comes out almost absurdly fast. The new work is building enough machinery around that speed that the result remains mine.
+
+## Developer's log — October 10, 2026
+
+### 400 kB is a noticeably large binary, isn't it?
+
+Today *zero & infinity* ran very fast on the MIRO A1, with no signing problem. But its APK weighed almost 450 kB. I asked whether we'd forgotten to strip the debug symbols.
+
+We hadn't. The APK was 444,585 bytes. The actual ARM32 native library was 51,864 bytes before compression, about 24 kB compressed inside the APK. The bulk was **fifteen launcher PNGs**: ordinary, round, and adaptive foreground icons, each at five densities. Together they occupied 399,294 bytes—almost ninety percent of the entire package. The little picture identifying the program was much larger than the program.
+
+That produced an unexpectedly satisfying exchange:
+
+> Hah!! Why 15 launcher pngs and why do large for an icon???
+
+And then:
+
+> This made me laugh out loud.
+>
+> First of all, I get to consider 450kB a large binary.
+>
+> Secondly, it was only large because of the launcher icons!
+>
+> Back down to 25 kB, you program.
+
+The absurdity delights me. I live in a world where 400 kB still seems like a noticeably large binary, and it turned out that most of the weight was in the icons.
+
+The 25 kB target is a command, not yet a new APK. Nothing has been repackaged or released smaller on the strength of this discovery alone.
+
+*Source: October 10, 2026, physical A1 testing conversation. The indented lines preserve the developer's wording; the byte counts come from inspection of the test APK.*
+
